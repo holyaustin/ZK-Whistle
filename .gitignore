@@ -1,3 +1,9 @@
 node_modules
+.env
 relayer/node_modules
 relayer/.env
+webapp/.env
+webapp/node_modules
+cache
+artifacts
+
