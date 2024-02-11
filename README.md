@@ -1,3 +1,5 @@
+## zk-Whistle
+
 Message board with limited anonymity set.
 
 # On-chain Privacy DApp Demo using inclusion proofs
