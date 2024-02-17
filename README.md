@@ -1,10 +1,7 @@
 ## zk-Whistle
 
-Message board with limited anonymity set.
-
-Scroll is a general-purpose zk-rollup project aiming to be an EVM-equivalent zkEVM. EVM-equivalent goes further than EVM-compatible with an environment that runs the same as the specifications presented in Ethereum Yellow Paper
-
-![Banner](webapp/images/whistleblower.jpg)
+The application of blockchain and zero-knowledge proofs in whistleblowing offers a promising avenue for enhancing the effectiveness and safety of whistleblowing mechanisms, thereby promoting integrity and ethical behavior in both public and private sectors.
+M![Banner](webapp/images/whistleblower.jpg)
 
 ## overview
 Whistleblowing, the act of disclosing information about wrongdoing within an organization, is crucial for maintaining transparency and accountability. However, traditional whistleblowing mechanisms often face challenges such as security risks, lack of anonymity, and potential retaliation against whistleblowers. Leveraging blockchain technology along with zero-knowledge proofs offers a promising solution to address these issues.
@@ -14,8 +11,6 @@ Blockchain, as a decentralized and immutable ledger, provides a transparent and 
 Zero-knowledge proofs (ZKPs) enable a party (the prover) to prove possession of certain information to another party (the verifier) without revealing the actual information itself. This cryptographic technique allows whistleblowers to submit evidence anonymously while still proving the validity of their claims. With ZKPs, whistleblowers can maintain their privacy and protect themselves from potential reprisals.
 
 Combining blockchain with zero-knowledge proofs, whistleblowers can securely submit evidence of wrongdoing, such as financial fraud or ethical breaches, to a decentralized platform without revealing their identity. This not only enhances the credibility of whistleblowing reports but also encourages more individuals to come forward with valuable information, ultimately fostering greater transparency and accountability within organizations and society at large.
-
-Overall, the application of blockchain and zero-knowledge proofs in whistleblowing offers a promising avenue for enhancing the effectiveness and safety of whistleblowing mechanisms, thereby promoting integrity and ethical behavior in both public and private sectors.
 
 The project was built with the Aztec and Noir programming language. Nargo was installed and used for all the circuit management. It was used to generate the version of solidity proof that was deployed on Scroll.
 Another circuit program in Nor was written to handle the Merkle whitelisting of members who can comment on the dApp.
