@@ -1246,6 +1246,8 @@ textarea {
     word-wrap : normal !important;
 }
 
+
+
 .u-clearfix:after {
     content : "";
     display : table;
@@ -2253,6 +2255,33 @@ button.btn--pill {
     border-radius : 1000px !important;
 }
 
+.button {
+    font-weight : 400;
+    //border      : 2px solid var(--color-btn-stroke);
+    color       : var(--color-btn-stroke-text);
+    background  : black;
+    padding     : 20px;
+    text-align  : center;
+    border-radius: 5px;
+    color       : white;
+    line-height : 25px;
+
+    --btn-height            : var(--vspace-btn);
+    display                 : block;
+    font-family             : var(--font-2);
+    text-transform          : uppercase;
+    letter-spacing          : .3em;
+    height                  : var(--btn-height);
+
+    background-color : orange;
+    border-color     : white;
+    margin-right     : var(--vspace-1);
+    margin-bottom    : 0;
+    --text-title-size : 2.8rem;
+    --text-multiplier : 1;
+    font-weight       : 800;
+    font-size         : calc(var(--text-title-size) * var(--text-multiplier));
+}
 
 /* ===================================================================
  * # TABLE
