@@ -2,6 +2,8 @@
 
 Message board with limited anonymity set.
 
+Scroll is a general-purpose zk-rollup project aiming to be an EVM-equivalent zkEVM. EVM-equivalent goes further than EVM-compatible with an environment that runs the same as the specifications presented in Ethereum Yellow Paper
+
 # On-chain Privacy DApp Demo using inclusion proofs
 
 This demo showcases all the parts needed to create a privacy preserving DApp with good UX which are:
@@ -126,3 +128,36 @@ The webapp will automatically open on your browser. Now you will be able to gene
 plonk_vk Contract deployed to 0xD8542343ceC6FbDdb62CaEBC613C320fB0A62303
 
 CommentVerifier Contract deployed to 0xe04725eD16105aB00cbdAC3dD28F5ccB774d29e5
+
+  {
+      value: "0x2c3b2B2325610a6814f2f822D0bF4DAB8CF16e16",
+      index: "0",
+      hashPath: ["0x000000000000000000000000ab2E06a5dd2f751Df0d2D2448788D8cBd06ac149","0x0000000000000000000000000a6D6f4556B022c0C7051d62E071c0ACecE5a1228"],
+    },
+    {
+      value: "0xab2E06a5dd2f751Df0d2D2448788D8cBd06ac149",
+      index: "1",
+      hashPath: ["0x000000000000000000000002c3b2B2325610a6814f2f822D0bF4DAB8CF16e16","0x0000000000000000000000000a6D6f4556B022c0C7051d62E071c0ACecE5a1228"],
+    },
+    {
+      value: "0xa6D6f4556B022c0C7051d62E071c0ACecE5a1228",
+      index: "2",
+      hashPath: ["0x0000000000000000000000000a6D6f4556B022c0C7051d62E071c0ACecE5a1228","0x1476e5c502f3a532e7c36640e88eebf769ae99d6c50f3be65279ca937b795a3d"],
+    }
+
+Root
+
+index = "1"
+leafLeft = "0x0000000000000000000000000a6D6f4556B022c0C7051d62E071c0ACecE5a1228"
+leafRight = "0x033fab28bac981376d9237d1ca7ae9fa617d97b758ac1e8078264c8bf75dc1ac"
+"0x1476e5c502f3a532e7c36640e88eebf769ae99d6c50f3be65279ca937b795a3d"
+
+0x30323ddf97a95ec7eda3b642946f5e59981d8e20cf3f70b7cb92bd876b1e4b6c
+
+
+0x1c0992dbab9037dd5279a32269ff8a74ae935c60615a32d8707582270adab996
+0x1728ff97bc86896c6243bf1becfd43ba58926b13a19ae2022ea42487ce8630ed
+
+0x04c1d0d0ef830ffa74ab66b08d98f9972c13cceed65afd7819ff61d5fc7860ac
+0x07510026168bce62c27664fb30a9c79653470e65168befdd75077cd4bbe49c56
+

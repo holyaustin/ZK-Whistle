@@ -193,6 +193,7 @@ const sendProof = async (comment) => {
   }
   if(index == null || index == hashPath) {
     console.log("Could not find the signer on the merkle tree")
+    alert("Could not find the signer on the merkle tree")
     return;
   }
 
@@ -202,7 +203,7 @@ const sendProof = async (comment) => {
   const input = {
     hash_path: hashPath,
     index: index,
-    root: "0x2a550743aa7151b3324482a03b2961ec4b038672a701f8ad0051b2c9d2e6c4c0",
+    root: "0x775B8e5B303929f2D2318d610eB223ba58de5a79",
     pub_key_x: Array.from(ethers.utils.arrayify("0x"+pub_key_x)),
     pub_key_y: Array.from(ethers.utils.arrayify("0x"+pub_key_y)),
     signature: sSignature,
@@ -222,7 +223,7 @@ const sendProof = async (comment) => {
     tHashedMessage[i] = "0x00000000000000000000000000000000000000000000000000000000000000" + tHashedMessage[i]
   }
 
-  tHashedMessage.push("0x2a550743aa7151b3324482a03b2961ec4b038672a701f8ad0051b2c9d2e6c4c0")
+  tHashedMessage.push("0x775B8e5B303929f2D2318d610eB223ba58de5a79")
 
   console.log("tHashedMessage2")
   console.log(tHashedMessage)
