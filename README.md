@@ -1,7 +1,8 @@
 ## zk-Whistle
 
 The application of blockchain and zero-knowledge proofs in whistleblowing offers a promising avenue for enhancing the effectiveness and safety of whistleblowing mechanisms, thereby promoting integrity and ethical behavior in both public and private sectors.
-M![Banner](webapp/images/whistleblower.jpg)
+
+![Banner](webapp/images/whistleblower.jpg)
 
 ## overview
 Whistleblowing, the act of disclosing information about wrongdoing within an organization, is crucial for maintaining transparency and accountability. However, traditional whistleblowing mechanisms often face challenges such as security risks, lack of anonymity, and potential retaliation against whistleblowers. Leveraging blockchain technology along with zero-knowledge proofs offers a promising solution to address these issues.
