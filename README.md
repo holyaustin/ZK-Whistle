@@ -161,3 +161,13 @@ leafRight = "0x033fab28bac981376d9237d1ca7ae9fa617d97b758ac1e8078264c8bf75dc1ac"
 0x04c1d0d0ef830ffa74ab66b08d98f9972c13cceed65afd7819ff61d5fc7860ac
 0x07510026168bce62c27664fb30a9c79653470e65168befdd75077cd4bbe49c56
 
+## overview
+Whistleblowing, the act of disclosing information about wrongdoing within an organization, is crucial for maintaining transparency and accountability. However, traditional whistleblowing mechanisms often face challenges such as security risks, lack of anonymity, and potential retaliation against whistleblowers. Leveraging blockchain technology along with zero-knowledge proofs offers a promising solution to address these issues.
+
+Blockchain, as a decentralized and immutable ledger, provides a transparent and tamper-proof platform for storing sensitive information related to whistleblowing cases. By recording whistleblowing reports on a blockchain, the integrity and authenticity of the data can be ensured, reducing the risk of manipulation or censorship by any single entity.
+
+Zero-knowledge proofs (ZKPs) enable a party (the prover) to prove possession of certain information to another party (the verifier) without revealing the actual information itself. This cryptographic technique allows whistleblowers to submit evidence anonymously while still proving the validity of their claims. With ZKPs, whistleblowers can maintain their privacy and protect themselves from potential reprisals.
+
+Combining blockchain with zero-knowledge proofs, whistleblowers can securely submit evidence of wrongdoing, such as financial fraud or ethical breaches, to a decentralized platform without revealing their identity. This not only enhances the credibility of whistleblowing reports but also encourages more individuals to come forward with valuable information, ultimately fostering greater transparency and accountability within organizations and society at large.
+
+Overall, the application of blockchain and zero-knowledge proofs in whistleblowing offers a promising avenue for enhancing the effectiveness and safety of whistleblowing mechanisms, thereby promoting integrity and ethical behavior in both public and private sectors.
