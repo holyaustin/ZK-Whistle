@@ -4,6 +4,24 @@ Message board with limited anonymity set.
 
 Scroll is a general-purpose zk-rollup project aiming to be an EVM-equivalent zkEVM. EVM-equivalent goes further than EVM-compatible with an environment that runs the same as the specifications presented in Ethereum Yellow Paper
 
+![Banner](webapp/images/whistleblower.jpg)
+
+## overview
+Whistleblowing, the act of disclosing information about wrongdoing within an organization, is crucial for maintaining transparency and accountability. However, traditional whistleblowing mechanisms often face challenges such as security risks, lack of anonymity, and potential retaliation against whistleblowers. Leveraging blockchain technology along with zero-knowledge proofs offers a promising solution to address these issues.
+
+Blockchain, as a decentralized and immutable ledger, provides a transparent and tamper-proof platform for storing sensitive information related to whistleblowing cases. By recording whistleblowing reports on a blockchain, the integrity and authenticity of the data can be ensured, reducing the risk of manipulation or censorship by any single entity.
+
+Zero-knowledge proofs (ZKPs) enable a party (the prover) to prove possession of certain information to another party (the verifier) without revealing the actual information itself. This cryptographic technique allows whistleblowers to submit evidence anonymously while still proving the validity of their claims. With ZKPs, whistleblowers can maintain their privacy and protect themselves from potential reprisals.
+
+Combining blockchain with zero-knowledge proofs, whistleblowers can securely submit evidence of wrongdoing, such as financial fraud or ethical breaches, to a decentralized platform without revealing their identity. This not only enhances the credibility of whistleblowing reports but also encourages more individuals to come forward with valuable information, ultimately fostering greater transparency and accountability within organizations and society at large.
+
+Overall, the application of blockchain and zero-knowledge proofs in whistleblowing offers a promising avenue for enhancing the effectiveness and safety of whistleblowing mechanisms, thereby promoting integrity and ethical behavior in both public and private sectors.
+
+The project was built with the Aztec and Noir programming language. Nargo was installed and used for all the circuit management. It was used to generate the version of solidity proof that was deployed on Scroll.
+Another circuit program in Nor was written to handle the Merkle whitelisting of members who can comment on the dApp.
+The Comment verifier contract was deployed on Scroll. 
+The vite Framework was used for the frontend of this project.
+
 # On-chain Privacy DApp Demo using inclusion proofs
 
 This demo showcases all the parts needed to create a privacy preserving DApp with good UX which are:
@@ -63,6 +81,8 @@ nargo codegen-verifier
 
 This will generate a Solidity file located at `circuit/contract/circuit/plonk_vk.sol`. Deploy it on an EVM on-chain.
 
+plonk_vk Contract deployed to 0xd853c72d627845B59a3Fc9880eEcF50D699bcBEB
+
 ### Before you continue
 
 Make sure you generate your anonymity set. Usually you may want to generate them on a library provided by Aztec that has the implementation of Pedersen hashing method that matches their prover library. However that library has not been released yet. So for the sake of compatibility we'll use the following circuit to print the merkle tree.
@@ -96,6 +116,10 @@ In this example we'll use the following merkle tree with a few ethereum accounts
 ### Step 2. Deploy the verifier contract
 
 Now deploy the `CommentVerifier` contract located at `contracts/CommentVerifier.sol`. Pass the Verifier contract you just generated as constructor parameter.
+
+CommentVerifier Contract deployed to 0xD547726541FB37dB19fDB263f4855bA969034071
+
+0x0B5587b927F1f129D5752dD0448e594A3053EaA2
 
 ### Step 3. Launch the Relayer
 
@@ -161,13 +185,3 @@ leafRight = "0x033fab28bac981376d9237d1ca7ae9fa617d97b758ac1e8078264c8bf75dc1ac"
 0x04c1d0d0ef830ffa74ab66b08d98f9972c13cceed65afd7819ff61d5fc7860ac
 0x07510026168bce62c27664fb30a9c79653470e65168befdd75077cd4bbe49c56
 
-## overview
-Whistleblowing, the act of disclosing information about wrongdoing within an organization, is crucial for maintaining transparency and accountability. However, traditional whistleblowing mechanisms often face challenges such as security risks, lack of anonymity, and potential retaliation against whistleblowers. Leveraging blockchain technology along with zero-knowledge proofs offers a promising solution to address these issues.
-
-Blockchain, as a decentralized and immutable ledger, provides a transparent and tamper-proof platform for storing sensitive information related to whistleblowing cases. By recording whistleblowing reports on a blockchain, the integrity and authenticity of the data can be ensured, reducing the risk of manipulation or censorship by any single entity.
-
-Zero-knowledge proofs (ZKPs) enable a party (the prover) to prove possession of certain information to another party (the verifier) without revealing the actual information itself. This cryptographic technique allows whistleblowers to submit evidence anonymously while still proving the validity of their claims. With ZKPs, whistleblowers can maintain their privacy and protect themselves from potential reprisals.
-
-Combining blockchain with zero-knowledge proofs, whistleblowers can securely submit evidence of wrongdoing, such as financial fraud or ethical breaches, to a decentralized platform without revealing their identity. This not only enhances the credibility of whistleblowing reports but also encourages more individuals to come forward with valuable information, ultimately fostering greater transparency and accountability within organizations and society at large.
-
-Overall, the application of blockchain and zero-knowledge proofs in whistleblowing offers a promising avenue for enhancing the effectiveness and safety of whistleblowing mechanisms, thereby promoting integrity and ethical behavior in both public and private sectors.
