@@ -6,7 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "vite --open",
-    "build": "vite build",
+    "build": "vite build && node relayer/relayer.js",
     "preview": "vite preview",
     "relayer": "node relayer/relayer.js"
   },
